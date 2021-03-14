@@ -7,6 +7,6 @@ Stack used - Languages: HTML, CSS, Bootstrap, PHP & Javascript Database : PHPMyA
 Database contains two Tables- Customers Table & History Table
 
 Customers table have basic fields such as name, email & current balance of the customer.
-History table records all transactions happened.
+History table records all transactions happened at what time.
 
 Flow of the Website: Home Page > View all Customers > Select and View one Customer > Transfer Money > Select Customer to transfer to > View all Customers.
