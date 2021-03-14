@@ -18,7 +18,7 @@
 <ul class="nav navbar-nav navbar-right">
 <li><a href = "index.html"><span class = "glyphicon glyphicon-home"></span> Home</a></li>
 
-<!-- for creating new users
+<!-- for creating new user
 <li><a href="user.php"><span class="glyphicon glyphicon-user"></span>Create New User</a></li>
 -->
 
