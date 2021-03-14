@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 14, 2021 at 12:20 AM
+-- Generation Time: Mar 14, 2021 at 12:24 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -39,12 +39,12 @@ CREATE TABLE `customers` (
 --
 
 INSERT INTO `customers` (`id`, `name`, `email`, `balance`) VALUES
-(1, 'Prakshal', 'prakshal@email.com', 45000),
-(2, 'Yash', 'yash@email.com', 52000),
+(1, 'Prakshal', 'prakshal@email.com', 40000),
+(2, 'Yash', 'yash@email.com', 50000),
 (3, 'Shubham', 'shubham@email.com', 70000),
-(4, 'Arjav', 'arjav@email.com', 53000),
-(5, 'Lakshit', 'lakshit@email.com', 55000),
-(6, 'Raj', 'raj@email.com', 12500),
+(4, 'Arjav', 'arjav@email.com', 50000),
+(5, 'Lakshit', 'lakshit@email.com', 60000),
+(6, 'Raj', 'raj@email.com', 17500),
 (7, 'Purab', 'purab@email.com', 30000),
 (8, 'avni', 'avni@email.com', 80000),
 (9, 'aakash', 'aakash@email.com', 60000),
@@ -60,17 +60,18 @@ CREATE TABLE `history` (
   `sid` int(255) NOT NULL,
   `sender` varchar(255) NOT NULL,
   `receiver` varchar(255) NOT NULL,
-  `amount` int(255) NOT NULL
+  `amount` int(255) NOT NULL,
+  `date&time` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `history`
 --
 
-INSERT INTO `history` (`sid`, `sender`, `receiver`, `amount`) VALUES
-(1, 'Yash', 'Raj', 10000),
-(2, 'Prakshal', 'Arjav', 5000),
-(3, 'avni', 'Raj', 5500);
+INSERT INTO `history` (`sid`, `sender`, `receiver`, `amount`, `date&time`) VALUES
+(1, 'Yash', 'avni', 2000, '2021-03-14 11:19:45'),
+(2, 'Prakshal', 'Lakshit', 5000, '2021-03-14 11:21:58'),
+(3, 'Arjav', 'Raj', 5000, '2021-03-14 11:24:13');
 
 --
 -- Indexes for dumped tables
