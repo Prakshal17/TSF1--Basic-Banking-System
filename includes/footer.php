@@ -15,8 +15,9 @@ include 'includes/common.php';
 <title>The Sparks Bank</title>
 </head>
 <body>
-<footer class="text-center">
-<p>&copy 2021 Made by <b>Prakshal Jain</b> For the Internship Task of  <b><a href="https://www.thesparksfoundationsingapore.org/">The Sparks Foundation.</a></b></p>
+<footer class="text-center mt-5 py-2">
+            
+<p> 2021 Made by <b>&copy Prakshal Jain</b> For the Internship Task of  <b><a href="https://www.thesparksfoundationsingapore.org/">The Sparks Foundation.</a></b></p>
 </footer>
 </body>
 </html>
