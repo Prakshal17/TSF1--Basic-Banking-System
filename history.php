@@ -41,6 +41,7 @@ include 'includes/header.php';
 <th>Sender</th>
 <th>Receiver</th>
 <th>Amount</th>
+<th>Date & Time</th>
 </tr>
 </thead>
 <tbody>
@@ -52,6 +53,7 @@ while($row=mysqli_fetch_assoc($select_query)){
 <td ><?php echo $row['sender']?></td>
 <td ><?php echo $row['receiver']?></td>
 <td ><?php echo $row['amount']?></td>
+<td ><?php echo $row['date&time']?></td>
 </tr>
 
 <?php
