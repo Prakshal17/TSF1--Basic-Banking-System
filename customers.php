@@ -23,15 +23,13 @@ $select_query=mysqli_query($con,$select);
 <?php
 include 'includes/header.php';
 ?>
-
 <div class="container">
 <div class="row">
-<h2 class="text-center" style="margin-top: 100px;"><b>Customer Details</b></h2>
+<h2 class="text-center" style="margin-top: 100px;">Transfer Money</h2>
 <br>
 
 <div class="col-md-offset-2 col-md-8">
 <table class="table table-hover">
-
 <thead>
 <tr>
 <th>ID</th>
@@ -60,8 +58,5 @@ while($row=mysqli_fetch_assoc($select_query)){
 </div>
 </div>
 </div>
-<?php
-include 'includes/footer.php';
-?>
 </body>
 </html>
