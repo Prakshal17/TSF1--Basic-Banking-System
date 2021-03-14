@@ -41,11 +41,11 @@ echo "</script>";
 else {
 // deducting amount from sender's account
 $newbalance = $row1['balance'] - $amount;
-$new = "UPDATE users set balance=$newbalance where id=$from";
+$new = "UPDATE customers set balance=$newbalance where id=$from";
 mysqli_query($con,$new);
 // adding amount to reciever's account
 $newbalance = $row2['balance'] + $amount;
-$new2 = "UPDATE users set balance=$newbalance where id=$to";
+$new2 = "UPDATE customers set balance=$newbalance where id=$to";
 mysqli_query($con,$new2);
 $sender = $row1['name'];
 $receivr = $row2['name'];
@@ -84,7 +84,7 @@ include 'includes/header.php';
 ?>
 
 <div class="container">
-<h2 class="text-center" style="margin-top: 100px;">Transfer Money</h2>
+<h2 class="text-center" style="margin-top: 100px;">Transaction</h2>
 <br>
 <br>
 <div class="row">
